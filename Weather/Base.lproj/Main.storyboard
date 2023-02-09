@@ -35,7 +35,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LfX-xt-0V9">
                                         <rect key="frame" x="151" y="0.0" width="43.333333333333343" height="62"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFB-eT-GTD">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFB-eT-GTD">
                                                 <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                                 <nil key="textColor"/>
@@ -48,6 +48,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gFB-eT-GTD" firstAttribute="centerX" secondItem="LfX-xt-0V9" secondAttribute="centerX" id="Vvq-uC-Bhr"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eAn-kO-Sjr">
                                         <rect key="frame" x="84.000000000000014" y="71.999999999999972" width="177.33333333333337" height="71.333333333333343"/>
@@ -103,6 +106,7 @@
                         <outlet property="minTempLabel" destination="nbs-br-iv9" id="OeU-Ya-p90"/>
                         <outlet property="tempLabel" destination="688-gt-8y3" id="YpJ-HL-0ta"/>
                         <outlet property="weatherDescriptionLabel" destination="CQe-eg-Zb1" id="GQk-9p-75Q"/>
+                        <outlet property="weatherStackView" destination="l8h-Zt-XqE" id="7Zg-Sc-QW1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
