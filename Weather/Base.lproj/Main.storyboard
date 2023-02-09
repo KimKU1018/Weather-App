@@ -25,6 +25,9 @@
                                 <rect key="frame" x="138.33333333333334" y="147" width="116.66666666666666" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="날씨 가져오기"/>
+                                <connections>
+                                    <action selector="tapFetchWeatherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="En4-bX-rFQ"/>
+                                </connections>
                             </button>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l8h-Zt-XqE">
                                 <rect key="frame" x="24" y="231.33333333333331" width="345" height="143.33333333333331"/>
@@ -93,6 +96,14 @@
                             <constraint firstItem="l8h-Zt-XqE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="qci-ND-mdG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="gFB-eT-GTD" id="D4q-0l-tgU"/>
+                        <outlet property="cityNameTextField" destination="Ztc-rs-cyh" id="X4r-qV-x4Q"/>
+                        <outlet property="maxTempLabel" destination="6MH-yD-LRQ" id="ww1-Oo-V8h"/>
+                        <outlet property="minTempLabel" destination="nbs-br-iv9" id="OeU-Ya-p90"/>
+                        <outlet property="tempLabel" destination="688-gt-8y3" id="YpJ-HL-0ta"/>
+                        <outlet property="weatherDescriptionLabel" destination="CQe-eg-Zb1" id="GQk-9p-75Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
